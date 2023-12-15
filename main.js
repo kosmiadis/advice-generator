@@ -4,8 +4,7 @@ const diceBtn = document.querySelector('.dice_btn')
 let isPending = false
 
 async function fetchAdvice() {
-    isPending = true
-    console.log('isPending: ' + isPending)
+    isPending = true    
     await fetch('https://api.adviceslip.com/advice')
     .then(data => data.json())
     .then(obj => {
@@ -15,8 +14,7 @@ async function fetchAdvice() {
     .catch(e => {
         console.log(e)
     })
-    .finally(isPending = false)
-    console.log('isPending: ' + isPending)
+    .finally(isPending = false)    
 }
 
 window.addEventListener('load', e => {
