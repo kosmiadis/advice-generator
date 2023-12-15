@@ -20,7 +20,7 @@ div.advice_container {
     padding: 3rem;
     border-radius: 12px;
     background-color: hsl(217, 19%, 24%);
-    width: 100%;
+    width: 80%;
     max-width: 350px;
     display: flex;
     flex-direction: column;
